@@ -1,0 +1,60 @@
+:root {
+
+    --grey: #489edbab;
+    --blue: #151c2f;
+    --white: #ffffff;
+    --red: #ff3c4a;
+    --other-red: #ff3c49b4;
+    --light: #f8f9fa;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --secondary: #6c757d;
+}
+
+/* background image */
+body {
+
+    background-image: url("./photos/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* header */
+.jumbotron {
+    background-color: var(--light);
+    color: var(--blue);
+    margin-bottom: 0px;
+
+}
+
+.display-4 {
+    font-weight: bold;
+    font-size: 64px;
+}
+
+.quote {
+    color: var(--blue);
+    font-size: 18px;
+    margin: 5px;
+
+}
+
+/* navbar */
+.navbar {
+
+    background-color: var(--gray-dark);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.nav-font {
+    font-size: 18px;
+    color: var(--light);
+    margin: 10px;
+    margin-left: 25px;
+
+}
