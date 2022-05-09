@@ -1,5 +1,6 @@
 import React from 'react';
 
+// header section
 function Header() {
     return (
         <div className='box'>

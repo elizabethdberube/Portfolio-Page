@@ -1,7 +1,6 @@
 import React from 'react';
 
-//className='nav-font' 
-
+// navbar assigning section to anchor tag
 function Navigation({ currentPage, handlePageChange }) {
     return (
         <nav className='nav-bar'>

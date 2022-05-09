@@ -5,7 +5,6 @@
     --headerGreen: #28a745;
     --lightPink: #e286cd;
 
-
 }
 
 body,
@@ -14,8 +13,6 @@ html {
     margin: 0;
 
 }
-
-
 
 .bigdiv {
     min-height: 100%;
@@ -53,7 +50,7 @@ html {
     font-family: 'roboto';
 }
 
-
+/* navbar */
 .nav-link {
     text-align: left;
     display: flex;
@@ -86,7 +83,7 @@ html {
 }
 
 
-
+/* content section */
 .card {
     background-color: var(--white);
     color: var(--gray-dark);
@@ -124,6 +121,7 @@ img {
     font-size: 26px;
 }
 
+/* footer */
 .footer {
 
     display: flex;

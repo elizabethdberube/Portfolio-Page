@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-
+// portfolio page
 function Portfolio() {
     return (
         <div className='card' >

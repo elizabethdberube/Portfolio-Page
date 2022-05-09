@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-
+// contact page
 function Contact() {
     return (
         <div className='card' >

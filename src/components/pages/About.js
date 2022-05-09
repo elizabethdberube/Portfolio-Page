@@ -2,6 +2,7 @@ import React from 'react';
 import photo from './images/photo.png';
 
 
+// about section
 function Project() {
     return (
         <div className='card' >
