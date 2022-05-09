@@ -14,31 +14,31 @@ export default function Project() {
         if (currentPage === 'About') {
             return (<div>
                 <Header />
-                <Footer />
                 <About />
+                <Footer />
             </div>
             );
         }
         if (currentPage === 'Portfolio') {
             return (<div>
                 <Header />
-                <Footer />
                 <Portfolio />
+                <Footer />
             </div>
             );
         }
         if (currentPage === 'Contact') {
             return (<div>
                 <Header />
-                <Footer />
                 <Contact />
+                <Footer />
             </div>
             );
         }
         return (<div>
             <Header />
-            <Footer />
             <Resume />
+            <Footer />
         </div>
         );
 
