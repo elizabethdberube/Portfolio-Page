@@ -1,24 +1,26 @@
 import React from 'react';
 
-function Navigation() {
+//className='nav-font' 
+
+function Navigation({ currentPage, handlePageChange }) {
     return (
         <nav className='nav-bar'>
             <div>
                 <ul class="navbar-nav">
                     <li>
-                        <a className='nav-font' href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a className='nav-font' href="https://www.linkedin.com/in/elizabeth-berube-b30022190">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a className='nav-font' href="https://github.com/elizabethdberube">GitHub Page</a>
+                        <a href="#about"
+                            onClick={() => handlePageChange('About')}
+                            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                        >About</a>
                     </li>
                     <li className='nav-item'>
-                        <a className='nav-font' href="#projects">Recent Projects</a>
+                        <a className='nav-font' href="#portfolio">Portfolio</a>
+                    </li>
+                    <li className='nav-item'>
+                        <a className='nav-font' href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a className='nav-font' href="#contact">Contact Information</a>
+                        <a className='nav-font' href="#resume">Resume</a>
                     </li>
                 </ul>
             </div>
