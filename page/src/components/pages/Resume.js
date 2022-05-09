@@ -2,11 +2,11 @@ import React from 'react';
 
 
 
-function Portfolio() {
+function Resume() {
     return (
         <div className='card' >
             <div className='card-body'>
-                <h5 className='card-title'>Portfolio</h5>
+                <h5 className='card-title'>Resume</h5>
 
                 <p className='card-text'>Info </p>
             </div>
@@ -14,4 +14,4 @@ function Portfolio() {
     )
 }
 
-export default Portfolio;
+export default Resume;
