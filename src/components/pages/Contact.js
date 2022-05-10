@@ -5,9 +5,9 @@ function Contact() {
     return (
         <div className='card' >
             <div className='card-body'>
-                <h5 className='card-title'>Contact</h5>
+                <h5 className='card-title'>Contact:</h5>
 
-                <p className='card-text'>Info </p>
+                <a className='email' href="mailto:fake@email.com">elizabethdberube@gmail.com</a>
             </div>
         </div>
     )

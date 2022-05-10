@@ -7,7 +7,7 @@ import Contact from './pages/Contact.js';
 import Resume from './pages/Resume.js';
 import Portfolio from './pages/Portfolio.js';
 
-// This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+
 
 export default function Project() {
     const [currentPage, setCurrentPage] = useState('About');
