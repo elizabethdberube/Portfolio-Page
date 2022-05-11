@@ -13,6 +13,7 @@ function Portfolio() {
         <div>
             <div className="picture">
                 <div className="card text-white">
+
                     <img src={blog} className="card-img" alt="tech"></img>
                     <div className="card-img-overlay">
                         <h5 className="card-title text-3">Technically a Blog</h5>
