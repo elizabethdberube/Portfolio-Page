@@ -71,7 +71,7 @@ html {
     display: flex;
     flex-direction: row;
     width: 5%;
-    min-height: 180vh;
+    min-height: 168vh;
     background-color: var(--gray-dark);
     margin-right: 0;
     position: absolute;
@@ -83,12 +83,12 @@ html {
 }
 
 
-/* about */
+/* about section */
 .card {
     background-color: var(--white);
     color: var(--gray-dark);
-    margin-top: 5%;
-    margin-left: 20%;
+    margin-top: 4%;
+    margin-left: 15%;
     width: 60%;
     height: 250px;
     font-weight: bolder;
@@ -128,29 +128,94 @@ html {
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
+    position: relative;
+    height: 350px;
+    margin-left: 5%;
+    margin-right: 15%;
 }
 
 .picture2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 20px;
-
+    margin: auto;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 15%;
+    height: 350px;
 }
 
 
-.rounded {
+.card-img {
     height: 300px;
     width: 350px;
     margin: 20px;
+
 }
 
-/*email*/
-.email {
+.card-img-overlay {
+    margin: 10px;
+
+}
+
+.text {
+    font-weight: bolder;
+    padding-top: 20px;
+    width: 325px;
+}
+
+.text-2 {
+    font-weight: bolder;
+    color: black;
+    padding-top: 20px;
+    width: 325px;
+
+}
+
+.text-3 {
+    font-weight: 600;
+    color: var(--aqua);
+    padding-top: 20px;
+    width: 325px;
+}
+
+.links {
+
+    font-family: 'roboto';
+    font-size: 24px;
+    color: white;
+    width: 325px;
+    display: block;
+    padding: 10px
+}
+
+.links-2 {
+    font-family: 'roboto';
+    font-size: 24px;
+    color: black;
+    width: 325px;
+    display: block;
+    padding: 10px
+}
+
+/* contact section*/
+form {
     font-weight: bolder;
     font-family: 'roboto';
     font-size: 24px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
+
+.error-text {
+    font-weight: bolder;
+    font-family: 'roboto';
+    font-size: 24px;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
 
 /* footer */
 .footer {

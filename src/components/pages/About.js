@@ -5,7 +5,7 @@ import photo from './images/photo.png';
 // about section
 function Project() {
     return (
-        <div className='card' >
+        <div className='card about' >
             <div className='card-body'>
                 <h5 className='card-title'>About Me</h5>
                 <p className='card-text'>As an energetic, talented self-starter, I enjoy solving technical problems. As a New England native, I
