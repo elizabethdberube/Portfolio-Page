@@ -1,39 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers.js';
 
-// const handleInput = (event) => {
-//     const { target } = event;
-//     const inputType = target.name;
-//     const inputValue = target.value;
-
-//     if (inputType === 'email') {
-//         setEmail(inputValue);
-//     } else if (inputType === 'name') {
-//         setName(inputValue);
-//     } else if (inputType === 'note') {
-//         setNote(inputValue);
-//     }
-//     handleValidation();
-// };
-
-// const handleEmail = () => {
-
-
-//     if (!validateEmail(email)) {
-//         alert('Email is invalid');
-//         return;
-//     }
-// }
-//     if (!name) {
-//         alert('Name is empty')
-//         return;
-//     }
-//     if (!note) {
-//         alert('Note is empty')
-
-//         return;
-//     } 
-// }
 
 // contact page
 function Contact() {
