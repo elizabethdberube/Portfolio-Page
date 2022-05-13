@@ -7,7 +7,7 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [name, setName] = useState('');
     const [note, setNote] = useState('');
-
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleInput = (event) => {
         const { target } = event;
@@ -30,25 +30,28 @@ function Contact() {
     const handleEmail = () => {
 
         if (!validateEmail(email)) {
-            alert('Email field is invalid or empty. This is a required field');
+            setErrorMessage('Email field is invalid or empty. This is a required field');
             return;
         }
     }
     const handleName = () => {
 
         if (!name) {
-            alert('This field is required')
+            setErrorMessage('This field is required');
             return;
         }
     }
     const handleNote = () => {
 
         if (!note) {
-            alert('This field is required')
+            setErrorMessage('This field is required');
             return;
         }
     }
 
+    const clearMessage = () => {
+        setErrorMessage('');
+    }
 
 
     const handleSubmit = (event) => {
@@ -61,25 +64,24 @@ function Contact() {
 
 
     return (
-
-        <div>
+        <div class="formDiv">
             <form name="form1">
                 <div className="form-group" >
                     <div className="form-group">
                         <label >Name</label>
-                        <input className="form-control" id="exampleInputPassword1" placeholder="Name" value={name} name="name" onChange={handleInput} onMouseOut={handleName} type="name"></input>
+                        <input className="form-control" id="exampleInputPassword1" placeholder="Name" value={name} name="name" onChange={handleInput} onMouseOut={handleName} onMouseEnter={clearMessage} type="name"></input>
                     </div>
 
                     <label htmlFor="exampleInputEmail1">Email address</label>
                     <div className="form-group">
-                        <input className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" type='email' name='email' value={email} onChange={handleInput} onMouseOut={handleEmail} ></input>
+                        <input className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" type='email' name='email' value={email} onChange={handleInput} onMouseOut={handleEmail} onMouseEnter={clearMessage}></input>
                     </div>
                     <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
 
                 </div>
                 <div className="form-group">
                     <label htmlFor="exampleFormControlTextarea1">Note</label>
-                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={note} name="note" onChange={handleInput} onMouseOut={handleNote} type="note" placeholder="Note"></textarea>
+                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" value={note} name="note" onChange={handleInput} onMouseOut={handleNote} onMouseEnter={clearMessage} type="note" placeholder="Note"></textarea>
                 </div>
 
 
@@ -87,6 +89,11 @@ function Contact() {
 
             </form>
 
+            {errorMessage && (
+                <div>
+                    <p className="error-text">{errorMessage}</p>
+                </div>
+            )}
         </div>
     )
 }
