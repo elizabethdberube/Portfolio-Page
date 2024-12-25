@@ -31,7 +31,7 @@ function Resume() {
                 <hr class="my-4"></hr>
                 <h5 className='card-title'>Resume</h5>
 
-                <a href="Elizabeth Berube's Resume.pdf" download="Elizabeth Berube's Resume" id="resume"
+                <a href="Berube.pdf" download="Berube" id="resume"
                     class="btn contact">Download my resume</a>
             </div>
         </div>
